@@ -1,0 +1,109 @@
+:root {
+  --bg: #f0f0f0;
+  --text: #333;
+  --accent: #ff6347;
+  --dark-bg: #1e1e1e;
+  --dark-text: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  --bg: var(--dark-bg);
+  --text: var(--dark-text);
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.timer {
+  font-size: 4em;
+  margin: 20px 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.timer.animate {
+  transform: scale(1.1);
+}
+
+.status {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.controls button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.controls button:hover {
+  transform: scale(1.05);
+}
+
+.toggle-mode {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 2px solid var(--text);
+  background: none;
+  color: var(--text);
+  padding: 5px 10px;
+  font-size: 1.2em;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.controls button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1.5em; /* Larger icon */
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.icon-btn {
+  background: transparent;
+  color: var(--text);
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+  margin: 0 15px;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.icon-btn:hover {
+  background: rgba(255, 99, 71, 0.1); /* subtle red hover circle */
+  transform: scale(1.1);
+}
+.icon-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 99, 71, 0.3); /* subtle red focus ring */
+}

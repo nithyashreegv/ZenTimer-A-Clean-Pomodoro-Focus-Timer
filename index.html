@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FocusFlow Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body class="dark-mode"> <!-- black background by default -->
+  <button class="toggle-mode" onclick="toggleDarkMode()">☀️</button>
+
+  <h1>ZenTimer</h1>
+  <div class="timer" id="timer">25:00</div>
+  <div class="status" id="status">Ready to focus!</div>
+
+    <div class="controls">
+  <button onclick="startTimer()" title="Start">▶</button>
+  <button onclick="pauseTimer()" title="Pause">⏸</button>
+  <button onclick="resetTimer()">Reset</button>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
